@@ -5,7 +5,7 @@ node default {
     owner => 'root',
   }
   
-  package {'vim':
+  package {'sl':
             ensure => present,
   }
 }

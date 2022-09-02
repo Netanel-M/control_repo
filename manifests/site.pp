@@ -5,7 +5,7 @@ node default {
     owner => 'root',
   }
   
-  package {'sl':
+  package {'flatpak.x86_64':
             ensure => present,
   }
 }

@@ -8,4 +8,13 @@ node default {
   package {'flatpak.x86_64':
             ensure => present,
   }
+    
+  package {'httpd':
+            ensure => present,
+  }
+  
+  service {'httpd':
+    enable => true,
+    ensure => running,
+  }
 }

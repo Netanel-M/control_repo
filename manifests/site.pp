@@ -13,3 +13,7 @@ node default {
             ensure => absent,
   }
 }
+
+node master.puppet.vm {
+  include role::master_server
+}

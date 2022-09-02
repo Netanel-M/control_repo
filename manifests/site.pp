@@ -4,4 +4,8 @@ node default {
     content => "This is a readme",
     owner => 'root',
   }
+  
+  package {'vim':
+            ensure => present,
+  }
 }
